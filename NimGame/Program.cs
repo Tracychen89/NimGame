@@ -10,6 +10,13 @@ namespace NimGame
     {
         static void Main(string[] args)
         {
+            Random rdm = new Random();
+            int n = rdm.Next(1, 100);
+            Solution s = new Solution();
+            Console.WriteLine("When stones number is : {0}", n);
+            Console.WriteLine("The first player will win: {0}", s.CanWinNim(n));
+            Console.ReadLine();
+            
         }
     }
     public class Solution
